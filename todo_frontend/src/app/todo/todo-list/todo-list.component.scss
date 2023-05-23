@@ -1,0 +1,40 @@
+.todo{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.todo_span{
+  padding: 4px;
+  cursor: pointer;
+}
+
+.todo-table {
+  padding: 1% 2%;
+  border: 1px solid transparent;
+  margin: 1% auto;
+  width: 600px;
+  box-shadow: 1px 10px 30px #40f0c459;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+table{
+  width: 550px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th, td {
+  width: 300px;
+  text-align: center;
+}
+
+.todo_btn{
+  width: 22px;
+  height: 25px;
+}
+
+.todo-btn{
+  background-color: transparent;
+  border: 1px solid transparent;
+}

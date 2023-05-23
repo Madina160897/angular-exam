@@ -1,0 +1,39 @@
+<div class="p">
+
+  <h1>Задача 02</h1> <br />
+  Разобьем ее на несколько частей, будешь сдавать ее частями. <br /><br />
+  <h2>Часть первая</h2><br />
+  Добавить по клику на кнопку "add random number" случайное число от 1 до 100 в коллекцию внизу, там где сейчас 30, 3,
+  6. По клику число должно
+  добавляться в конец списка<br /><br />
+
+  <h2>Часть вторая</h2><br />
+  Вывести справа статистику по введенным числам:<br />
+  <ul>
+    <div> - Количество введенных чисел</div>
+    <div> - Mинимальное значение из всех чисел</div>
+    <div> - Mаксимальное значение из всех чисел</div>
+    <div> - Cреднее значение из всех чисел</div>
+  </ul>
+
+  <button class="btn-task" (click)="onClick()">Add random number</button>
+</div>
+
+<div class='task'>
+  <div class='m-2 row'>
+    <div class='col col-3'>
+      <div>Numbers in collection: </div>
+      <div *ngFor="let number of numbers$$ | async as numbers ">{{number}}</div>
+    </div>
+
+    <div class='col col-3' style='color: black'>
+      <div>Statistics: (вторая часть задачи)</div>
+      <div>Count: {{ countOfNumbers$$ | async}}</div>
+      <div>Min: {{minOfAllNumbers$$ | async}}</div>
+      <div>Max: {{maxOfAllNumbers$$ | async}}</div>
+      <div>Average: {{averageNumber$$ | async}}</div>
+    </div>
+  </div>
+
+  <button class="btn-back" routerLink='/tasks'>BACK</button>
+</div>

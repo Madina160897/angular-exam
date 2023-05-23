@@ -1,0 +1,33 @@
+header{
+	display: flex;
+	justify-content: space-around;
+	padding: 28px 10% 0 10%;
+	font-size: 26px;
+	height: 80px;
+	border-bottom: 1px solid gray;
+	box-shadow: 1px 10px 30px #40f0c4be;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+}
+
+.head{
+	display: flex;
+	width: 200px;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+	position:relative;
+	top: -30px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 700;
+}
+
+img{
+	width: 70px;
+	height: 70px;
+}

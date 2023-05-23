@@ -1,0 +1,9 @@
+<div class="card-edit">
+  <h2>Todo Details</h2>
+
+  <form [formGroup]="todoForm" class="input-chang df">
+    <input class="input" id="todo-id" type="text" formControlName="id" [value]="todoId" placeholder="ID" />
+    <input class="input" type="text" id="todo-text" name="value" formControlName="text" placeholder="Name" />
+    <button class="btn-add" (click)="onSubmit()">Save</button>
+  </form>
+</div>

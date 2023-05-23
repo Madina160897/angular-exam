@@ -1,0 +1,102 @@
+
+.game-buttons button {
+  margin: 0.5em;
+}
+
+
+.aria-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#area{
+  width: 300px;
+  height: 300px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 34px;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.p {
+	display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 800px;
+  margin: 3% auto;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 3%;
+  box-shadow: 7px 10px 5px gray;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	color: rgb(58, 56, 211);
+}
+
+.text{
+  text-align: justify;
+}
+
+.btn-task {
+	width: 300px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background-color: rgba(211, 81, 109, 0.746);
+	box-shadow: 5px 5px 5px gray;
+	font-size: 18px;
+	color: white;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 20px auto 0;
+}
+
+.task{
+	width: 600px;
+	margin: 1% auto;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	padding: 3%;
+	box-shadow: 7px 10px 5px gray;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 25px;
+	font-weight: 800;
+	box-sizing: border-box;
+ }
+
+ .btn-back{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background-color: rgba(211, 81, 109, 0.746);
+	box-shadow: 5px 5px 5px gray;
+	font-size: 18px;
+	color: white;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-top: 20px;
+}

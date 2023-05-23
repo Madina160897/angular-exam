@@ -1,0 +1,24 @@
+<ng-container>
+  <div class="todo-table" *ngFor="let todo of todos$$ | async">
+    <table>
+      <tbody>
+        <th>ID</th>
+        <th>TEXT</th>
+        <th>Checkbox</th>
+        <th>DELETE</th>
+        <th>Todo Details</th>
+      </tbody>
+      <tbody >
+        <td>{{todo.id}}</td>
+        <td>{{todo.text}}</td>
+        <td> <input class='todo_input' type='checkbox' [checked]="todo.isDone" ></td>
+        <td> <button class='todo-btn ml-5' (click)="deleteTodo(todo.id)"><img class='todo_btn' src="https://cdn-icons-png.flaticon.com/512/3405/3405244.png" alt=""></button></td>
+        <td> <button class='todo-btn ml-5' (click)="editTodoForm(todo.id)"><img class='todo_btn' src="https://cdn.icon-icons.com/icons2/2621/PNG/512/gui_edit_icon_157165.png" alt=""></button></td>
+      </tbody>
+    </table>
+  </div>
+</ng-container>
+
+
+<app-edit-todo *ngIf="selectedTodoId" [todoId]="selectedTodoId"></app-edit-todo>
+

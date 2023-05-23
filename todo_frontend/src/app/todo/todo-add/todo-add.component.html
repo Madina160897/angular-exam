@@ -1,0 +1,12 @@
+<div class="card-add">
+  <div class="block">
+    <form [formGroup]="todoForm" (submit)="onSubmit()">
+      <p class="input-chang">
+        <input class="input" type="text" id="value" name="value" formControlName="value" placeholder="Name" />
+        <input class="checkbox" type="checkbox" name="checkbox" formControlName="checkbox" />
+      </p>
+      <button class="btn-add mt-35" type="submit">Add Item</button>
+    </form>
+    <button class="btn-add mt-35" (click)="getAllTodos()">Get All Todos</button>
+  </div>
+</div>

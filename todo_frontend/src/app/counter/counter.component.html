@@ -1,0 +1,5 @@
+<div class="count">
+	<button class="btn" (click)='onDecrementClick()'>{{ decClicks$$ | async }}</button>
+	<span class="m-2" style='background-color: isCounterColor'>{{ counter$$ | async }}</span>
+	<button class="btn" (click)='onIncrementClick()'>{{ incClicks$$ | async }}</button>
+</div>
